@@ -15,25 +15,26 @@
 
   <meta name="theme-color" content="#4A6FA5">
 
-  <title>Daily Reset | Mental Health Skills You Can Actually Use</title>
+  <title>
+    Daily Reset | Mental Health Skills You Can Actually Use
+  </title>
 
   <style>
     :root {
       --primary: #4A6FA5;
       --primary-dark: #355781;
-      --primary-light: #EAF0F8;
       --secondary: #7FD1B9;
-      --secondary-dark: #4E9E88;
       --background: #F7F9FB;
       --surface: #FFFFFF;
       --text: #2E2E2E;
       --muted: #667085;
       --border: #DCE5ED;
       --soft-green: #E9F8F3;
+      --soft-blue: #EAF0F8;
       --shadow: 0 18px 48px rgba(46, 46, 46, 0.08);
-      --shadow-strong: 0 28px 70px rgba(46, 46, 46, 0.15);
-      --radius-large: 30px;
-      --radius-medium: 20px;
+      --strong-shadow: 0 28px 70px rgba(46, 46, 46, 0.15);
+      --large-radius: 30px;
+      --medium-radius: 20px;
       --max-width: 1160px;
     }
 
@@ -67,11 +68,6 @@
     a {
       color: inherit;
       text-decoration: none;
-    }
-
-    button,
-    a {
-      -webkit-tap-highlight-color: transparent;
     }
 
     .container {
@@ -113,7 +109,7 @@
       background:
         radial-gradient(
           circle at 36% 34%,
-          #ffffff 0 11%,
+          #FFFFFF 0 11%,
           transparent 12%
         ),
         linear-gradient(
@@ -127,12 +123,12 @@
     .nav-links {
       display: flex;
       align-items: center;
-      gap: 26px;
+      gap: 24px;
       color: var(--muted);
       font-size: 0.95rem;
     }
 
-    .nav-links > a:hover {
+    .nav-links a:hover {
       color: var(--primary);
     }
 
@@ -148,7 +144,6 @@
       transition:
         transform 160ms ease,
         background 160ms ease,
-        color 160ms ease,
         border-color 160ms ease,
         box-shadow 160ms ease;
     }
@@ -159,7 +154,7 @@
 
     .button-primary {
       background: var(--primary);
-      color: #ffffff;
+      color: #FFFFFF;
       box-shadow: 0 12px 28px rgba(74, 111, 165, 0.26);
     }
 
@@ -168,7 +163,7 @@
     }
 
     .button-secondary {
-      background: #ffffff;
+      background: #FFFFFF;
       color: var(--primary);
       border-color: var(--border);
     }
@@ -209,7 +204,8 @@
       gap: 72px;
     }
 
-    .eyebrow {
+    .eyebrow,
+    .availability-label {
       display: inline-flex;
       align-items: center;
       gap: 9px;
@@ -230,7 +226,7 @@
 
     h1 {
       max-width: 760px;
-      margin: 22px 0 22px;
+      margin: 22px 0;
       color: var(--primary);
       font-size: clamp(3.2rem, 7vw, 5.9rem);
       line-height: 0.98;
@@ -305,8 +301,8 @@
       width: min(100%, 360px);
       padding: 9px;
       border-radius: 58px;
-      background: #ffffff;
-      box-shadow: var(--shadow-strong);
+      background: #FFFFFF;
+      box-shadow: var(--strong-shadow);
       transform: rotate(2deg);
     }
 
@@ -349,7 +345,7 @@
     }
 
     .features-section {
-      background: #ffffff;
+      background: #FFFFFF;
     }
 
     .feature-grid {
@@ -362,7 +358,7 @@
       min-height: 260px;
       padding: 28px;
       border: 1px solid var(--border);
-      border-radius: var(--radius-medium);
+      border-radius: var(--medium-radius);
       background: var(--surface);
       box-shadow: 0 12px 30px rgba(46, 46, 46, 0.045);
     }
@@ -408,8 +404,8 @@
       gap: 18px;
       padding: 23px;
       border: 1px solid var(--border);
-      border-radius: var(--radius-medium);
-      background: #ffffff;
+      border-radius: var(--medium-radius);
+      background: #FFFFFF;
     }
 
     .step-number {
@@ -419,7 +415,7 @@
       place-items: center;
       border-radius: 50%;
       background: var(--primary);
-      color: #ffffff;
+      color: #FFFFFF;
       font-weight: 800;
     }
 
@@ -435,14 +431,14 @@
 
     .support-card {
       padding: 44px;
-      border-radius: var(--radius-large);
+      border-radius: var(--large-radius);
       background:
         linear-gradient(
           135deg,
           rgba(74, 111, 165, 0.99),
           rgba(53, 87, 129, 0.99)
         );
-      color: #ffffff;
+      color: #FFFFFF;
       box-shadow: var(--shadow);
     }
 
@@ -473,44 +469,8 @@
       border: 1px solid rgba(255, 255, 255, 0.25);
       border-radius: 999px;
       background: rgba(255, 255, 255, 0.13);
-      color: #ffffff;
+      color: #FFFFFF;
       font-size: 0.95rem;
-    }
-
-    .inside-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 22px;
-    }
-
-    .inside-card {
-      padding: 32px;
-      border: 1px solid var(--border);
-      border-radius: var(--radius-large);
-      background: #ffffff;
-      box-shadow: 0 14px 34px rgba(46, 46, 46, 0.05);
-    }
-
-    .inside-card span {
-      display: inline-flex;
-      padding: 7px 12px;
-      margin-bottom: 22px;
-      border-radius: 999px;
-      background: var(--primary-light);
-      color: var(--primary);
-      font-size: 0.82rem;
-      font-weight: 800;
-    }
-
-    .inside-card h3 {
-      margin: 0 0 10px;
-      font-size: 1.5rem;
-      color: var(--primary);
-    }
-
-    .inside-card p {
-      margin: 0;
-      color: var(--muted);
     }
 
     .about-card {
@@ -519,8 +479,8 @@
       gap: 44px;
       padding: 44px;
       border: 1px solid var(--border);
-      border-radius: var(--radius-large);
-      background: #ffffff;
+      border-radius: var(--large-radius);
+      background: #FFFFFF;
       box-shadow: var(--shadow);
     }
 
@@ -541,7 +501,7 @@
           var(--secondary),
           var(--primary)
         );
-      color: #ffffff;
+      color: #FFFFFF;
       font-size: 1.48rem;
       font-weight: 750;
       line-height: 1.38;
@@ -560,6 +520,64 @@
       color: var(--muted);
     }
 
+    .social-section {
+      background: #FFFFFF;
+    }
+
+    .social-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .social-card {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      padding: 30px;
+      border: 1px solid var(--border);
+      border-radius: var(--large-radius);
+      background: #FFFFFF;
+      box-shadow: 0 14px 34px rgba(46, 46, 46, 0.05);
+      transition:
+        transform 160ms ease,
+        box-shadow 160ms ease;
+    }
+
+    .social-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 18px 40px rgba(46, 46, 46, 0.09);
+    }
+
+    .social-icon {
+      width: 52px;
+      height: 52px;
+      display: grid;
+      place-items: center;
+      border-radius: 16px;
+      background: var(--soft-blue);
+      color: var(--primary);
+      font-size: 1.2rem;
+      font-weight: 900;
+    }
+
+    .social-card h3 {
+      margin: 0 0 6px;
+      color: var(--primary);
+      font-size: 1.42rem;
+    }
+
+    .social-handle {
+      margin: 0 0 8px;
+      color: var(--primary);
+      font-weight: 750;
+    }
+
+    .social-description {
+      margin: 0;
+      color: var(--muted);
+    }
+
     .faq-list {
       display: grid;
       gap: 14px;
@@ -568,8 +586,8 @@
     details {
       padding: 21px 23px;
       border: 1px solid var(--border);
-      border-radius: var(--radius-medium);
-      background: #ffffff;
+      border-radius: var(--medium-radius);
+      background: #FFFFFF;
     }
 
     summary {
@@ -583,69 +601,138 @@
       color: var(--muted);
     }
 
-    .cta-section {
-      padding-top: 40px;
+    .download-section {
+      padding-top: 42px;
       padding-bottom: 94px;
     }
 
-    .cta-card {
+    .download-card {
       padding: 58px 40px;
       border: 1px solid var(--border);
-      border-radius: var(--radius-large);
+      border-radius: var(--large-radius);
       background:
         linear-gradient(
           135deg,
-          rgba(127, 209, 185, 0.3),
+          rgba(127, 209, 185, 0.30),
           rgba(74, 111, 165, 0.12)
         );
       text-align: center;
     }
 
-    .cta-card h2 {
+    .download-card h2 {
       max-width: 780px;
-      margin: 0 auto 14px;
+      margin: 16px auto 14px;
       color: var(--primary);
       font-size: clamp(2.3rem, 5vw, 4.1rem);
       line-height: 1.03;
       letter-spacing: -0.05em;
     }
 
-    .cta-card p {
-      max-width: 660px;
-      margin: 0 auto 28px;
+    .download-card > p {
+      max-width: 700px;
+      margin: 0 auto;
       color: var(--muted);
       font-size: 1.08rem;
     }
 
-    .store-note {
-      margin-top: 15px;
+    .download-buttons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-top: 30px;
+    }
+
+    .store-button {
+      min-width: 270px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 14px;
+      padding: 14px 20px;
+      border-radius: 15px;
+      background: #1F2630;
+      color: #FFFFFF;
+      text-align: left;
+      box-shadow: 0 12px 28px rgba(31, 38, 48, 0.18);
+      transition:
+        transform 160ms ease,
+        box-shadow 160ms ease;
+    }
+
+    .store-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 16px 34px rgba(31, 38, 48, 0.24);
+    }
+
+    .store-icon {
+      width: 36px;
+      display: inline-grid;
+      place-items: center;
+      font-size: 1.55rem;
+    }
+
+    .store-copy {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.15;
+    }
+
+    .store-copy small {
+      margin-bottom: 4px;
+      color: rgba(255, 255, 255, 0.74);
+      font-size: 0.76rem;
+    }
+
+    .store-copy strong {
+      font-size: 1rem;
+    }
+
+    .testing-note {
+      max-width: 680px;
+      margin: 22px auto 0;
       color: var(--muted);
       font-size: 0.9rem;
     }
 
     footer {
-      padding: 34px 0 48px;
+      padding: 40px 0 50px;
       border-top: 1px solid var(--border);
       color: var(--muted);
       font-size: 0.92rem;
     }
 
-    .footer-row {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 22px;
-      flex-wrap: wrap;
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.4fr repeat(3, 1fr);
+      gap: 34px;
+      align-items: start;
+    }
+
+    .footer-brand p {
+      max-width: 320px;
+      margin: 12px 0 0;
+    }
+
+    .footer-column h3 {
+      margin: 0 0 12px;
+      color: var(--text);
+      font-size: 1rem;
     }
 
     .footer-links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
+      display: grid;
+      gap: 9px;
     }
 
     .footer-links a:hover {
       color: var(--primary);
+    }
+
+    .copyright {
+      margin-top: 34px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
     }
 
     @media (max-width: 980px) {
@@ -659,6 +746,10 @@
         grid-template-columns: repeat(2, 1fr);
       }
 
+      .social-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
       .phone-stage {
         min-height: 590px;
       }
@@ -666,6 +757,10 @@
       .phone-image-frame {
         width: min(100%, 340px);
         transform: none;
+      }
+
+      .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
       }
     }
 
@@ -686,16 +781,19 @@
         font-size: clamp(3.3rem, 15vw, 4.5rem);
       }
 
-      .hero-actions {
+      .hero-actions,
+      .download-buttons {
         flex-direction: column;
       }
 
-      .button {
+      .button,
+      .store-button {
         width: 100%;
       }
 
       .feature-grid,
-      .inside-grid {
+      .social-grid,
+      .footer-grid {
         grid-template-columns: 1fr;
       }
 
@@ -721,7 +819,7 @@
 
       .about-card,
       .support-card,
-      .cta-card {
+      .download-card {
         padding: 29px;
       }
 
@@ -775,22 +873,44 @@
   <header class="site-header">
     <div class="container navigation">
 
-      <a class="brand" href="#top" aria-label="Daily Reset home">
-        <span class="brand-mark" aria-hidden="true"></span>
+      <a
+        class="brand"
+        href="#top"
+        aria-label="Daily Reset home"
+      >
+        <span
+          class="brand-mark"
+          aria-hidden="true"
+        ></span>
+
         Daily Reset
       </a>
 
-      <nav class="nav-links" aria-label="Primary navigation">
-        <a href="#features">Features</a>
-        <a href="#how-it-works">How It Works</a>
-        <a href="#about">About</a>
-        <a href="#faq">FAQ</a>
+      <nav
+        class="nav-links"
+        aria-label="Primary navigation"
+      >
+        <a href="#features">
+          Features
+        </a>
+
+        <a href="#how-it-works">
+          How It Works
+        </a>
+
+        <a href="#about">
+          About
+        </a>
+
+        <a href="#social">
+          Connect
+        </a>
 
         <a
           class="button button-primary"
-          href="https://app.dailyreset-app.com"
+          href="#download"
         >
-          Open the App
+          Join the Test
         </a>
       </nav>
 
@@ -802,14 +922,20 @@
     <section class="hero">
       <div class="container hero-grid">
 
-        <div class="hero-content">
+        <div>
 
           <span class="eyebrow">
-            <span class="eyebrow-dot" aria-hidden="true"></span>
+            <span
+              class="eyebrow-dot"
+              aria-hidden="true"
+            ></span>
+
             Small daily tools for meaningful change
           </span>
 
-          <h1>Mental health skills you can actually use.</h1>
+          <h1>
+            Mental health skills you can actually use.
+          </h1>
 
           <p class="hero-copy">
             Daily Reset helps you slow down, understand what you are
@@ -821,9 +947,9 @@
 
             <a
               class="button button-primary"
-              href="https://app.dailyreset-app.com"
+              href="#download"
             >
-              Open Daily Reset
+              Join the Test
             </a>
 
             <a
@@ -855,79 +981,118 @@
           </div>
         </div>
 
-        <div class="phone-stage" aria-label="Daily Reset app welcome screen">
+        <div
+          class="phone-stage"
+          aria-label="Daily Reset app welcome screen"
+        >
 
-          <div class="phone-halo" aria-hidden="true"></div>
+          <div
+            class="phone-halo"
+            aria-hidden="true"
+          ></div>
 
           <div class="phone-image-frame">
+
             <img
               class="phone-image"
               src="dailyresetscreen.png"
               alt="Daily Reset mobile app welcome screen with a peaceful mountain background"
             >
-          </div>
 
+          </div>
         </div>
+
       </div>
     </section>
 
-    <section class="features-section" id="features">
+    <section
+      class="features-section"
+      id="features"
+    >
       <div class="container">
 
         <div class="section-heading">
-          <h2>Support that meets you where you are.</h2>
+
+          <h2>
+            Support that meets you where you are.
+          </h2>
 
           <p>
             Daily Reset is designed to feel useful without becoming
             overwhelming. Check in, choose what fits the moment, and practice
             one manageable skill.
           </p>
+
         </div>
 
         <div class="feature-grid">
 
           <article class="feature-card">
-            <div class="feature-icon">✓</div>
 
-            <h3>Daily mood check-ins</h3>
+            <div class="feature-icon">
+              ✓
+            </div>
+
+            <h3>
+              Daily mood check-ins
+            </h3>
 
             <p>
               Pause long enough to notice how you are doing before moving
               automatically through the rest of your day.
             </p>
+
           </article>
 
           <article class="feature-card">
-            <div class="feature-icon">◉</div>
 
-            <h3>Practical mental health skills</h3>
+            <div class="feature-icon">
+              ◉
+            </div>
+
+            <h3>
+              Practical mental health skills
+            </h3>
 
             <p>
               Use approachable tools for anxiety, overwhelm, anger, sadness,
               self-doubt, burnout, and relationship stress.
             </p>
+
           </article>
 
           <article class="feature-card">
-            <div class="feature-icon">▶</div>
 
-            <h3>Short guided audio</h3>
+            <div class="feature-icon">
+              ▶
+            </div>
+
+            <h3>
+              Short guided audio
+            </h3>
 
             <p>
               Listen to focused exercises when reading feels like too much or
               you need support in the moment.
             </p>
+
           </article>
 
           <article class="feature-card">
-            <div class="feature-icon">✦</div>
 
-            <h3>Interactive practice</h3>
+            <div class="feature-icon">
+              ✦
+            </div>
+
+            <h3>
+              Interactive practice
+            </h3>
 
             <p>
               Turn mental health concepts into skills through simple
               activities, reflections, and interactive exercises.
             </p>
+
           </article>
 
         </div>
@@ -938,65 +1103,97 @@
       <div class="container how-grid">
 
         <div class="section-heading">
-          <h2>A reset does not have to be dramatic.</h2>
+
+          <h2>
+            A reset does not have to be dramatic.
+          </h2>
 
           <p>
             Meaningful change often begins by noticing what is happening and
             choosing one response that moves you in a healthier direction.
           </p>
+
         </div>
 
         <div class="steps">
 
           <article class="step">
-            <div class="step-number">1</div>
+
+            <div class="step-number">
+              1
+            </div>
 
             <div>
-              <h3>Check in</h3>
+
+              <h3>
+                Check in
+              </h3>
 
               <p>
                 Notice what you are feeling without judging yourself for
                 having the experience.
               </p>
+
             </div>
           </article>
 
           <article class="step">
-            <div class="step-number">2</div>
+
+            <div class="step-number">
+              2
+            </div>
 
             <div>
-              <h3>Choose support</h3>
+
+              <h3>
+                Choose support
+              </h3>
 
               <p>
                 Find a skill, audio exercise, or emotional support category
                 that fits what you need right now.
               </p>
+
             </div>
           </article>
 
           <article class="step">
-            <div class="step-number">3</div>
+
+            <div class="step-number">
+              3
+            </div>
 
             <div>
-              <h3>Practice one step</h3>
+
+              <h3>
+                Practice one step
+              </h3>
 
               <p>
                 Use the skill in a realistic way instead of pressuring
                 yourself to solve everything at once.
               </p>
+
             </div>
           </article>
 
           <article class="step">
-            <div class="step-number">4</div>
+
+            <div class="step-number">
+              4
+            </div>
 
             <div>
-              <h3>Build trust in yourself</h3>
+
+              <h3>
+                Build trust in yourself
+              </h3>
 
               <p>
                 Return when you need support and let small choices slowly
                 become part of how you respond to life.
               </p>
+
             </div>
           </article>
 
@@ -1009,7 +1206,9 @@
 
         <div class="support-card">
 
-          <h2>Find support for the moment you are in.</h2>
+          <h2>
+            Find support for the moment you are in.
+          </h2>
 
           <p>
             Daily Reset organizes practical tools around experiences that can
@@ -1018,77 +1217,34 @@
           </p>
 
           <div class="category-list">
-            <span class="category">Anxiety &amp; Overthinking</span>
-            <span class="category">Shame &amp; Self-Doubt</span>
-            <span class="category">Overwhelm &amp; Burnout</span>
-            <span class="category">Anger &amp; Frustration</span>
-            <span class="category">Sadness &amp; Loneliness</span>
-            <span class="category">Relationship Stress</span>
+
+            <span class="category">
+              Anxiety &amp; Overthinking
+            </span>
+
+            <span class="category">
+              Shame &amp; Self-Doubt
+            </span>
+
+            <span class="category">
+              Overwhelm &amp; Burnout
+            </span>
+
+            <span class="category">
+              Anger &amp; Frustration
+            </span>
+
+            <span class="category">
+              Sadness &amp; Loneliness
+            </span>
+
+            <span class="category">
+              Relationship Stress
+            </span>
+
           </div>
-
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="container">
-
-        <div class="section-heading">
-          <h2>More than information.</h2>
-
-          <p>
-            Daily Reset is built to help you practice skills, not just read
-            about them.
-          </p>
         </div>
 
-        <div class="inside-grid">
-
-          <article class="inside-card">
-            <span>Quick Support</span>
-
-            <h3>Use a skill in the moment.</h3>
-
-            <p>
-              Find grounding, breathing, thought-checking, emotional
-              awareness, and communication tools when you need them.
-            </p>
-          </article>
-
-          <article class="inside-card">
-            <span>Build Stability</span>
-
-            <h3>Strengthen the foundations.</h3>
-
-            <p>
-              Reflect on physical, intellectual, emotional, spiritual, and
-              sleep-related needs that support your overall wellbeing.
-            </p>
-          </article>
-
-          <article class="inside-card">
-            <span>Guided Audio</span>
-
-            <h3>Slow down and reconnect.</h3>
-
-            <p>
-              Use short guided practices that make it easier to pause, notice,
-              and respond with more intention.
-            </p>
-          </article>
-
-          <article class="inside-card">
-            <span>Interactive Exercises</span>
-
-            <h3>Practice without pressure.</h3>
-
-            <p>
-              Explore simple games and exercises that help reinforce skills in
-              an engaging and memorable way.
-            </p>
-          </article>
-
-        </div>
       </div>
     </section>
 
@@ -1104,7 +1260,9 @@
 
           <div class="about-copy">
 
-            <h2>Built with compassion, not shame.</h2>
+            <h2>
+              Built with compassion, not shame.
+            </h2>
 
             <p>
               Daily Reset was created by a clinical mental health counselor
@@ -1127,6 +1285,119 @@
 
           </div>
         </div>
+
+      </div>
+    </section>
+
+    <section
+      class="social-section"
+      id="social"
+    >
+      <div class="container">
+
+        <div class="section-heading">
+
+          <h2>
+            Connect with Daily Reset.
+          </h2>
+
+          <p>
+            Follow for practical mental health education, short daily
+            reminders, and updates from the app.
+          </p>
+
+        </div>
+
+        <div class="social-grid">
+
+          <a
+            class="social-card"
+            href="https://www.tiktok.com/@daily.reset.michael"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Follow Daily Reset on TikTok"
+          >
+
+            <div class="social-icon">
+              ♪
+            </div>
+
+            <div>
+
+              <h3>
+                TikTok
+              </h3>
+
+              <p class="social-handle">
+                @daily.reset.michael
+              </p>
+
+              <p class="social-description">
+                Short mental health videos and practical daily reminders.
+              </p>
+
+            </div>
+          </a>
+
+          <a
+            class="social-card"
+            href="https://www.youtube.com/@DailyMentalHealthSkills"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Subscribe to Daily Reset on YouTube"
+          >
+
+            <div class="social-icon">
+              ▶
+            </div>
+
+            <div>
+
+              <h3>
+                YouTube
+              </h3>
+
+              <p class="social-handle">
+                @DailyMentalHealthSkills
+              </p>
+
+              <p class="social-description">
+                Mental health education and short-form videos.
+              </p>
+
+            </div>
+          </a>
+
+          <a
+            class="social-card"
+            href="https://www.instagram.com/michael_iorg/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Follow Daily Reset on Instagram"
+          >
+
+            <div class="social-icon">
+              ◎
+            </div>
+
+            <div>
+
+              <h3>
+                Instagram
+              </h3>
+
+              <p class="social-handle">
+                @michael_iorg
+              </p>
+
+              <p class="social-description">
+                Daily Reset videos, reminders, and app updates.
+              </p>
+
+            </div>
+          </a>
+
+        </div>
       </div>
     </section>
 
@@ -1134,90 +1405,172 @@
       <div class="container">
 
         <div class="section-heading">
-          <h2>Frequently asked questions</h2>
+
+          <h2>
+            Frequently asked questions
+          </h2>
 
           <p>
             A few things to know before getting started with Daily Reset.
           </p>
+
         </div>
 
         <div class="faq-list">
 
           <details>
-            <summary>Is Daily Reset therapy?</summary>
+
+            <summary>
+              Is Daily Reset therapy?
+            </summary>
 
             <p>
               No. Daily Reset provides educational tools and guided mental
               health skills. It does not replace therapy, diagnosis, crisis
               care, or treatment from a qualified professional.
             </p>
+
           </details>
 
           <details>
-            <summary>Who is Daily Reset designed for?</summary>
+
+            <summary>
+              Who is Daily Reset designed for?
+            </summary>
 
             <p>
               Daily Reset is designed for adults who want practical support
               with emotional awareness, anxiety, overwhelm, self-doubt,
               relationships, burnout, and everyday stress.
             </p>
+
           </details>
 
           <details>
-            <summary>How long do the exercises take?</summary>
+
+            <summary>
+              How long do the exercises take?
+            </summary>
 
             <p>
               Many tools can be used in only a few minutes. Other skills can
               be revisited over time as you become more comfortable using
               them.
             </p>
+
           </details>
 
           <details>
-            <summary>Can I use Daily Reset during a crisis?</summary>
+
+            <summary>
+              Is the app fully released?
+            </summary>
+
+            <p>
+              Daily Reset is currently available through TestFlight for
+              iPhone and Open Testing on Google Play. Features may continue
+              to change as testing and development continue.
+            </p>
+
+          </details>
+
+          <details>
+
+            <summary>
+              Can I use Daily Reset during a crisis?
+            </summary>
 
             <p>
               Daily Reset is not a crisis service. If you may be in immediate
               danger or are thinking about harming yourself or someone else,
               contact emergency services or a crisis service in your area.
             </p>
-          </details>
 
-          <details>
-            <summary>Where can I access Daily Reset?</summary>
-
-            <p>
-              Daily Reset is available through the web app, with mobile app
-              download links being added as public releases become available.
-            </p>
           </details>
 
         </div>
       </div>
     </section>
 
-    <section class="cta-section">
+    <section
+      class="download-section"
+      id="download"
+    >
       <div class="container">
 
-        <div class="cta-card">
+        <div class="download-card">
 
-          <h2>Take the next step, not every step.</h2>
+          <span class="availability-label">
+            Now available for testing
+          </span>
+
+          <h2>
+            Help shape Daily Reset.
+          </h2>
 
           <p>
-            Open Daily Reset and choose one skill that helps you respond to
-            this moment with more awareness and intention.
+            Join the current test, explore the app, and share feedback as
+            Daily Reset continues moving toward full public release.
           </p>
 
-          <a
-            class="button button-primary"
-            href="https://app.dailyreset-app.com"
-          >
-            Open Daily Reset
-          </a>
+          <div class="download-buttons">
 
-          <div class="store-note">
-            App Store and Google Play download links will be added here.
+            <a
+              class="store-button"
+              href="https://testflight.apple.com/join/4qajSwSB"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Join Daily Reset on TestFlight for iPhone"
+            >
+
+              <span class="store-icon">
+                
+              </span>
+
+              <span class="store-copy">
+
+                <small>
+                  Join on
+                </small>
+
+                <strong>
+                  TestFlight for iPhone
+                </strong>
+
+              </span>
+            </a>
+
+            <a
+              class="store-button"
+              href="https://play.google.com/store/apps/details?id=com.dailyreset.app.mobile"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Join Daily Reset open testing on Google Play"
+            >
+
+              <span class="store-icon">
+                ▶
+              </span>
+
+              <span class="store-copy">
+
+                <small>
+                  Join the
+                </small>
+
+                <strong>
+                  Google Play Open Test
+                </strong>
+
+              </span>
+            </a>
+
           </div>
+
+          <p class="testing-note">
+            These are testing versions of Daily Reset. You may encounter
+            occasional bugs, interface changes, or newly added features.
+          </p>
 
         </div>
       </div>
@@ -1226,29 +1579,120 @@
   </main>
 
   <footer>
-    <div class="container footer-row">
+    <div class="container">
 
-      <div>
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+
+          <a
+            class="brand"
+            href="#top"
+          >
+
+            <span
+              class="brand-mark"
+              aria-hidden="true"
+            ></span>
+
+            Daily Reset
+          </a>
+
+          <p>
+            Mental health skills you can actually use.
+          </p>
+
+        </div>
+
+        <div class="footer-column">
+
+          <h3>
+            Download
+          </h3>
+
+          <div class="footer-links">
+
+            <a
+              href="https://testflight.apple.com/join/4qajSwSB"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              TestFlight for iPhone
+            </a>
+
+            <a
+              href="https://play.google.com/store/apps/details?id=com.dailyreset.app.mobile"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Google Play Open Test
+            </a>
+
+          </div>
+        </div>
+
+        <div class="footer-column">
+
+          <h3>
+            Connect
+          </h3>
+
+          <div class="footer-links">
+
+            <a
+              href="https://www.tiktok.com/@daily.reset.michael"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              TikTok
+            </a>
+
+            <a
+              href="https://www.youtube.com/@DailyMentalHealthSkills"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              YouTube
+            </a>
+
+            <a
+              href="https://www.instagram.com/michael_iorg/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Instagram
+            </a>
+
+          </div>
+        </div>
+
+        <div class="footer-column">
+
+          <h3>
+            Support
+          </h3>
+
+          <div class="footer-links">
+
+            <a href="mailto:michael@dailyreset-app.com">
+              Contact
+            </a>
+
+            <a
+              href="mailto:michael@dailyreset-app.com?subject=Daily%20Reset%20Support"
+            >
+              App Support
+            </a>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="copyright">
         © 2026 Daily Reset. All rights reserved.
       </div>
 
-      <div class="footer-links">
-
-        <a href="mailto:michael@dailyreset-app.com">
-          Contact
-        </a>
-
-        <a
-          href="mailto:michael@dailyreset-app.com?subject=Daily%20Reset%20Support"
-        >
-          Support
-        </a>
-
-        <a href="https://app.dailyreset-app.com">
-          Open the App
-        </a>
-
-      </div>
     </div>
   </footer>
 
